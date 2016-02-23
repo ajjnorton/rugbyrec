@@ -1,0 +1,96 @@
+@charset "UTF-8";
+/* CSS Document */
+html{
+	text-align:left;
+}
+
+
+
+body{
+	//font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-family:Arial, Helvetica, sans-serif;
+	text-align:left;
+	margin-left:100px;
+	margin-top:50px;
+}
+
+hr{
+	//float:left;
+	clear:left;
+	width:342px;
+	text-align:left;
+	margin:0px;
+	border:0px;
+	background-color:#000;
+	color:#000;
+	height:5px;
+	margin-bottom:10px;
+	
+}
+
+h2{
+	padding:0px;
+	margin:0px;
+	margin-top:20px;
+	padding-bottom:10px;
+	font-size:25px;
+}
+
+.datecell:hover{
+	background:#CCC;
+	cursor:pointer;
+	color:#000;
+}
+
+.datecell{
+	padding-top:20px;
+	padding-left:20px;
+	padding-right:5px;
+	
+	color:#ccc;
+	background:#F5F5F5;
+	//width:30px;
+	text-align:right;
+	font-weight:800;
+}
+
+#dow{
+	color:#000;
+	padding-top:15px;
+	padding-bottom:15px;
+	background:#F5F5F5;
+	//width:30px;
+	text-align:center;
+	font-size:12px;
+}
+
+#blanc{
+	color:#000;
+	padding:10px;
+	background:#F5F5F5;
+	//width:30px;
+	text-align:right;
+}
+
+#dcell{
+	visibility:hidden;
+	display:none;
+}
+
+#mdate{
+	font-size:20px;
+}
+
+#dateout{
+	text-align:left;
+	//float:left;
+	font-size:20px;
+	outline:#00FF00 dotted thin;
+}
+
+#calendar{
+	outline:#00FF00 dotted thin;
+	width:400px;
+	float:left;
+}
+

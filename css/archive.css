@@ -1,0 +1,166 @@
+@charset "UTF-8";
+/* CSS Document */
+html {
+    background-color: #eeeeee;
+}
+
+.gallery_container{
+	padding:20px 0px 0px 15px;
+	clear:left;
+	
+}
+.image_container{
+	
+	float:left;
+	//outline:#F00 dotted thin;
+	padding:20px 10px 20px 20px;
+	height:270px;
+	width:180px;
+	margin-left:20px;
+	margin-bottom:20px;
+	
+	border:1px solid #B4B4B4;
+	-moz-box-shadow:    0px 0px 4px 2px #ccc;
+		-webkit-box-shadow: 0px 0px 4px 2px #ccc;
+		box-shadow:         0px 0px 4px 2px #ccc;
+		color:#333;
+		
+}
+figcaption{
+	
+	
+	//outline:#06F dotted thin;
+	font-size:14px;
+	color:#309;
+	height:45px;
+	border-bottom:1px solid #B4B4B4;
+	margin-right:10px;
+	margin-bottom:10px;
+	padding-bottom:5px;
+	overflow:hidden;
+}
+
+
+
+.inner_img_container{
+	//outline:#06F dotted thin;
+	background-color:#F2F2F2;
+	margin-right:10px;
+	margin-left:0px;
+	
+	height:150px;
+	width:150px;
+	text-align:center;
+	vertical-align:central;
+	position:relative;
+	display:table-cell;
+	vertical-align:middle;
+	padding:10px;
+	//border:1px solid #B4B4B4;
+	
+}
+
+.player_name{
+	clear:both;
+	margin-top:80px;
+	padding:0px 0px 0px 35px;
+	font-size:46px;
+	font-family:"LinotypeUniversW01-Medi 723679";
+
+}
+
+.combo_container{
+	margin: 20px 0px 0px 35px;
+}
+
+.player_set{
+	float:left;
+	padding:0px 20px 0px 0px;
+}
+#or{
+	float:left;
+	padding:0px 20px 0px 0px;
+}
+.match_set{
+	float:left;
+	padding:0px 0px 0px 0px;
+}
+
+.img_id{
+	font-size:12px;
+	float:left;
+	margin:12px 0px 0px 10px;
+}
+
+.add_to_order{
+	float:left;
+	margin:10px 0px 0px 0px;
+	width:60px;
+}
+
+#dialog-modal{
+	font-size:12px;
+}
+
+caption{
+	text-align:left;
+	font-size:18px;
+	padding:10px 0px 0px 83px;
+}
+
+table{
+	padding:0px 0px 0px 100px;
+}
+
+.step{
+	font-size:16px;
+	
+}
+
+.intro{
+	font-size:18px;
+	padding:10px 0px 0px 0px;
+	
+}
+
+.order_info{
+	font-size:20px;
+	font-weight:700;
+}
+
+a.andy_contact{
+	display:inline;
+	text-decoration:underline;
+	
+	
+}
+
+a:focus{
+	outline:0;
+}
+
+.gallery_page_intro{
+	clear:both;
+	margin:20px 0px 0px 35px;
+}
+
+/** clearfix **/
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+/** end clearfix **/

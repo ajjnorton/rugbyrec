@@ -1,0 +1,27 @@
+#content{
+    padding:0px 0px 20px 35px;
+}
+
+#news_title{
+    color:rgb(0,0,0);
+    font-size:18px;
+    padding:0px 0px 10px 0px;
+}
+
+#day_date{
+    padding:15px 0px 0px 0px;
+}
+
+article{
+    padding: 0px 35px 20px 35px;
+    font-size:16px;
+}
+
+.news_title{
+    padding: 25px 35px 20px 35px;
+    font-size:28px;
+}
+#loading_text{
+    padding: 25px 35px 20px 35px;
+    font-size:20px;
+}

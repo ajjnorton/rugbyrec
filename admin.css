@@ -1,0 +1,385 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html {
+    background-color: #eeeeee;
+}
+
+*{
+	margin:0px;
+	padding:0px;
+    
+}
+
+
+.fig{
+	margin:0px;
+	padding:0px;
+}
+
+a{
+	margin:0px;
+	padding:0px;
+	display:inline;
+	display:block;
+}
+
+h1{
+	font-size:20px;
+	font-weight:normal;
+}
+
+
+
+body {
+		//margin-top:0px;
+		//margin-bottom:0px; 
+		//text-align:center;
+		//background-color:#eee;
+	}
+	hr{
+		margin:0px;
+		color:#D0D0D0;
+		background-color:#DFDFDF;
+		height: 1px;
+		border:none;
+		
+		clear:both;
+	}
+	
+	#top_line{
+		color:#000;
+		background-color:#000;
+		height: 5px;
+		border:none;
+		margin-bottom:30px;
+		
+		clear:left;
+	}
+	
+	
+	
+
+
+
+#Content {
+		width:1024px;
+		margin:0px auto;
+		text-align:left;
+		//padding:15px;
+		height:100%;
+		background-color:#FFF;
+		//padding-left:35px;
+		//padding-right:35px;
+		//padding-top:30px;
+		//padding-bottom:40px;
+		
+		//1. Horizontal offset
+		//2. Vertical offset
+		//3. Blur radius
+		//4. Spread raduis
+		//5. Color
+		-moz-box-shadow:    1px 0px 5px 4px #ccc;
+		-webkit-box-shadow: 1px 0px 5px 4px #ccc;
+		box-shadow:         1px 0px 5px 4px #ccc;
+		color:#333;
+		font-family:"Avenir LT W01 35 Light";
+		//outline:#F00 dotted thin;
+	}
+	
+
+	
+	/*Navigation */
+		nav{
+			text-align:left;
+			font-size: 16px;
+			
+			float:left;
+			margin-left:310px;
+			//outline:#F00 dotted thin;
+			margin-bottom:50px;
+		}
+		a{
+			text-decoration:none;
+			color:rgb(51,102,204);
+			//margin-left:10px;
+			
+			//padding-left:2px;
+			margin:0px;
+			padding:0px;
+		}
+
+		a:hover{
+			
+			color:#000;
+			border:0px 0px 0px 0px;
+		}
+
+		a.active{
+			
+			border-left:1px solid #000;
+			
+			color:#309;
+			padding-left:10px;
+			margin-left:-11px;
+			
+		}
+		
+		#menu1
+		{
+			float:left;
+			border-left:1px solid #CCC;
+			padding-left:10px;
+			color:#309;
+			
+		}
+		
+		#menu2{
+			float:left;
+			margin-left:40px;
+			border-left:1px solid #CCC;
+			padding-left:10px;
+			color:#309;
+		}
+		
+		#logo{
+			float:left;
+			padding:0px 0px 0px 35px;
+			
+		}
+		
+		hr{
+			//clear:left;
+			
+			
+		}
+		/* End Navigation*/
+		
+		
+	#title{
+		
+		font-size:60px;
+		color:#309;
+		margin-bottom:-5px;
+		margin-top:-10px;
+		padding:0px 0px 0px 0px;
+		font-family:"LinotypeUniversW01-Medi 723679";
+		//outline:#F00 dotted thin;
+		width:300px;
+		
+		letter-spacing:-2px;
+		//font-weight:800;
+	}
+	
+	#sub_title{
+		font-size:20px;
+		color:#CCC;
+		//outline:#F00 dotted thin;
+		padding:0px 0px 5px 0px;
+		font-family:"LinotypeUniversW01-Medi 723679";
+		width:300px;
+		letter-spacing:-1px;
+	}
+	
+.gallery_container{
+	padding:20px 0px 0px 15px;
+	clear:left;
+	
+}
+.image_container{
+	
+	float:left;
+	//outline:#F00 dotted thin;
+	padding:20px 10px 20px 20px;
+	height:260px;
+	width:180px;
+	margin-left:20px;
+	margin-bottom:20px;
+	
+	border:1px solid #B4B4B4;
+	-moz-box-shadow:    0px 0px 4px 2px #ccc;
+		-webkit-box-shadow: 0px 0px 4px 2px #ccc;
+		box-shadow:         0px 0px 4px 2px #ccc;
+		color:#333;
+		
+		
+}
+figcaption{
+	
+	
+	//outline:#06F dotted thin;
+	font-size:14px;
+	color:#309;
+	height:46px;
+	border-bottom:1px solid #B4B4B4;
+	margin-right:10px;
+	margin-bottom:10px;
+	padding-bottom:5px;
+	overflow:hidden;
+}
+
+
+
+.inner_img_container{
+	//outline:#06F dotted thin;
+	background-color:#F2F2F2;
+	margin-right:10px;
+	margin-left:0px;
+	
+	height:150px;
+	width:150px;
+	text-align:center;
+	vertical-align:central;
+	position:relative;
+	display:table-cell;
+	vertical-align:middle;
+	padding:10px;
+	//border:1px solid #B4B4B4;
+	
+}
+
+.player_name{
+	clear:both;
+	margin-top:80px;
+	padding:0px 0px 0px 35px;
+	font-size:46px;
+	font-family:"LinotypeUniversW01-Medi 723679";
+
+}
+
+.combo_container{
+	margin: 20px 0px 0px 35px;
+}
+
+.player_set{
+	float:left;
+	padding:0px 20px 0px 0px;
+}
+#or{
+	float:left;
+	padding:0px 20px 0px 0px;
+}
+.match_set{
+	float:left;
+	padding:0px 0px 0px 0px;
+}
+
+.img_id{
+	font-size:12px;
+	float:left;
+	margin:12px 0px 0px 10px;
+}
+
+.delete{
+	float:left;
+	margin:10px 0px 0px 0px;
+	width:50px;
+}
+.edit{
+	float:right;
+	margin:10px 10px 0px 0px;
+	width:50px;
+}
+
+#dialog-modal{
+	font-size:12px;
+}
+
+caption{
+	text-align:left;
+	font-size:18px;
+	padding:10px 0px 0px 83px;
+}
+
+table{
+	padding:0px 0px 0px 100px;
+}
+
+.step{
+	font-size:16px;
+	
+}
+
+.intro{
+	font-size:18px;
+	padding:10px 0px 0px 0px;
+	
+}
+
+.order_info{
+	font-size:20px;
+	font-weight:700;
+}
+
+a.andy_contact{
+	display:inline;
+	text-decoration:underline;
+	
+	
+}
+
+a:focus{
+	outline:0;
+}
+
+.gallery_page_intro{
+	clear:both;
+	padding:20px 0px 0px 35px;
+}
+
+.edit_dialog{
+	padding:10px 0px 0px 0px;
+	font-size:14px;
+}
+
+.edit_dialog label{
+	margin:5px 10px 0px 0px;
+	display:block;
+	width:120px;
+	
+	
+}
+
+.edit_dialog input{
+	margin:5px 0px 0px 0px;
+	width:300px;
+	font-size:14px;
+	
+}
+
+.edit_dialog textarea{
+	margin:5px 0px 0px 0px;
+	font-size:14px;
+	
+}
+
+
+.ta{
+	margin:0px 0px -30px 0px;
+	color:#F00;
+}
+
+/** clearfix **/
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+/** end clearfix **/
+
+button{
+	margin:10px 0px 0px 35px;
+}

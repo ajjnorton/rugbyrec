@@ -1,0 +1,63 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+
+.text-playerName{
+	font-size: 18px;
+	font-weight: 500;
+}
+.picture-container{
+	height:260px ;
+	overflow: hidden;
+}
+
+
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+
+hr {
+    margin-top: 0px !important;
+    color: #D0D0D0;
+    background-color: #DFDFDF;
+    height: 1px;
+    border: none;
+    clear: both;
+}
+
+#top_line {
+    color: #000;
+    background-color: #000;
+    height: 5px;
+    border: none;
+    margin-bottom: 0px;
+    clear: left;
+}
+
+.navbar-brand {
+    color: #309 !important;
+    font-weight: 700;
+}
+
+.select-button{
+	margin-top:24px;
+
+}

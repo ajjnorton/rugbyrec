@@ -1,0 +1,423 @@
+/* Mobile Layout: 480px and below. */
+
+
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+body {
+	margin:0px 0px; padding:0px;
+	text-align:center;
+	background-color:#eee;
+	}
+
+figure{
+	//margin-top:360px;
+	//outline:#F00 dotted thin;
+}
+article{
+	font-size:16px;
+	width:690px;
+	margin-top:20px;
+	//text-align:justify;
+	-moz-column-count:2; /* Firefox */
+	-webkit-column-count:2; /* Safari and Chrome */
+	column-count:2;
+	-moz-column-gap:40px; /* Firefox */
+	-webkit-column-gap:40px; /* Safari and Chrome */
+	column-gap:40px;
+	color:#999;
+	line-height:21px;
+	//outline:#F00 dotted thin;
+}
+
+#Content {
+	width:481px;
+	margin:0px auto;
+	text-align:left;
+	//padding:15px;
+	height:900px;
+	background-color:#FFF;
+	padding-left:35px;
+	//padding-right:40px;
+	padding-top:30px;
+	padding-bottom:40px;
+	
+	//1. Horizontal offset
+	//2. Vertical offset
+	//3. Blur radius
+	//4. Spread raduis
+	//5. Color
+  	-moz-box-shadow:    1px 0px 5px 4px #ccc;
+  	-webkit-box-shadow: 1px 0px 5px 4px #ccc;
+  	box-shadow:         1px 0px 5px 4px #ccc;
+	
+	
+	
+	//color:#AFAFAF;
+	color:#333;
+	font-family:"Avenir LT W01 35 Light";
+	font-size:20px;
+	//font-family:"LinotypeUniversW01-Thin 723610";
+  
+
+	}
+	
+
+	
+#title{
+	font-size:42px;
+	color:#309;
+	//margin-bottom:-5px;
+	padding:0px 0px 0px 0px;
+	font-family:"LinotypeUniversW01-Medi 723679";
+	//outline:#F00 dotted thin;
+	width:300px;
+	
+	letter-spacing:-2px;
+	//font-weight:800;
+}
+
+hr{
+	color:#F3F3F3;
+	background-color:#F3F3F3;
+	height: 2px;
+	border:none;
+	margin:15px 0px 10px 0px;
+}
+
+#line_under_title{
+	color:#F3F3F3;
+	background-color:#F3F3F3;
+	height: 2px;
+	border:none;
+	margin:5px 0px 0px 0px;
+}
+
+.box_title{
+	margin:110px 0px 0px 0px;
+	font-size:14px;
+	font-weight:bold;
+	
+}
+
+.short_line{
+	margin-top:10px;
+	margin-bottom:100px;
+	height: 4px;
+	
+}
+
+section .main_image{
+	width:690px;
+	height:380px;
+	background-color:#CCC;
+	background-size:100%;
+	background-position:center;
+	
+	
+}
+
+section #figure1{
+	clear:left;
+	padding-top: 10px;
+	width: 690px;
+	margin-left: 0px;
+	font-size: 12px;
+	font-style: italic;
+	color: #309;
+}
+
+section{
+	float:left;
+	width:690px;
+	//height:1000px;
+	//background-color:#CCC;
+	//outline:#F00 dotted thin;
+}
+
+#section_2{
+	
+	height:100px;
+	
+	//outline:#F00 dotted thin;
+}
+
+aside{
+	//margin-top:1000px;
+	//float:left;
+	//width:210px;
+	//height:700px;
+	//background-color:#666;
+}
+
+
+
+
+
+
+
+#subtitle{
+	font-size:24px;
+	color:#CCC;
+	//outline:#F00 dotted thin;
+	padding:0px 0px 5px 0px;
+	font-family:"LinotypeUniversW01-Medi 723679";
+	width:300px;
+	letter-spacing:-1px;
+}
+
+.section_title{
+	
+	font-size: 20px;
+	margin-bottom:-12px;
+	margin-top:2px;
+	
+}
+
+#s_title{
+	margin:220px 0px 0px 0px;
+	cursor:pointer;
+	
+	
+}
+
+#intro{
+	
+	font-size:16px;
+	color:#999;
+	-moz-column-count:3; /* Firefox */
+	-webkit-column-count:3; /* Safari and Chrome */
+	column-count:3;
+	line-height:20px;
+	padding:0px 0px 0px 0px;
+	
+}
+
+#player_list{
+	float: left;
+	font-size: 14px;
+	color: #999;
+	width: 960px;
+	line-height: 16px;
+	-moz-column-count: 6; /* Firefox */
+	-webkit-column-count: 6; /* Safari and Chrome */
+	column-count: 6;
+	//background:#F6F6F6;
+	//padding:15px 0px 15px 0px;
+	margin-bottom: 30px;	
+}
+
+.player:hover{
+	font-size:14px;
+	cursor:pointer;
+	color:#036;
+	//font-weight:500;
+	//letter-spacing:-2px;
+	background:#F7F7F7;
+}
+.player{
+	float:left;
+}
+
+
+
+
+
+
+.box{
+	width:150px;
+	height:100px;
+	background:#F6F6F6;
+	float:left;
+	margin:20px 0px 0px 0px;
+	
+	
+	
+}
+
+
+#box_2{
+	margin-left:12px;
+}
+
+#box_3{
+	margin-left:12px;
+}
+
+#box_4{
+	margin-left:12px;
+}
+
+#box_5{
+	margin-left:12px;
+}
+
+#box_6{
+	margin-left:12px;
+	//clear:right;
+}
+
+table{
+	
+	border-collapse:collapse;
+	//border-style:none;
+	border-bottom:1px solid #F00;
+	border-top:1px solid #F00;
+	border-left:1px solid #F00;
+	border-right:1px solid #F00;
+}
+
+.table1 caption{
+	text-align:left;
+	font-size:24px;
+	margin-top:100px;
+}
+
+.table1 th{
+	padding:7px 10px 7px 10px;
+	//outline:dashed #CCCCCC thin;
+	border-bottom:1px solid #F00;
+	//border-top:1px solid #FFF;
+	 //background-color:#9DD929;
+	font-size:14px;
+	font-style:normal;
+	font-weight:normal;
+	color:#000;
+	
+	background:-webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0.02,rgb(181,181,181)),
+        color-stop(0.51, rgb(155,155,155)),
+        color-stop(0.87, rgb(205,205,205))
+        );
+    background: -moz-linear-gradient(
+        center bottom,
+        rgb(123,192,67) 2%,
+        rgb(139,198,66) 51%,
+        rgb(158,217,41) 87%
+        );
+}
+.table1 td{
+	padding:5px 30px 5px 10px;
+	//outline:dashed #CCCCCC thin;
+	font-size:14px;
+	color:#666;
+	
+	
+}
+
+
+
+.table1 caption{
+	padding:5px 10px 5px 0px;
+	//outline:dashed #CCCCCC thin;
+}
+
+
+@media only screen and (min-width: 481px) {
+	
+	
+	#title{
+	font-size:12px;
+	color:#309;
+	//margin-bottom:-5px;
+	padding:0px 0px 0px 0px;
+	font-family:"LinotypeUniversW01-Medi 723679";
+	//outline:#F00 dotted thin;
+	width:300px;
+	
+	letter-spacing:-2px;
+	//font-weight:800;
+}
+
+#Content {
+	width:768px;
+	margin:0px auto;
+	text-align:left;
+	//padding:15px;
+	height:900px;
+	background-color:#FFF;
+	padding-left:35px;
+	//padding-right:40px;
+	padding-top:30px;
+	padding-bottom:40px;
+	
+	//1. Horizontal offset
+	//2. Vertical offset
+	//3. Blur radius
+	//4. Spread raduis
+	//5. Color
+  	-moz-box-shadow:    1px 0px 5px 4px #ccc;
+  	-webkit-box-shadow: 1px 0px 5px 4px #ccc;
+  	box-shadow:         1px 0px 5px 4px #ccc;
+	
+	
+	
+	//color:#AFAFAF;
+	color:#333;
+	font-family:"Avenir LT W01 35 Light";
+	font-size:20px;
+	//font-family:"LinotypeUniversW01-Thin 723610";
+  
+
+	}
+
+}
+
+/* Any screen device 920px and below is when this media block applies */
+
+@media only screen and (min-width: 920px) {
+	
+	
+	#title{
+	font-size:80px;
+	color:#309;
+	//margin-bottom:-5px;
+	padding:0px 0px 0px 0px;
+	font-family:"LinotypeUniversW01-Medi 723679";
+	//outline:#F00 dotted thin;
+	width:300px;
+	
+	letter-spacing:-2px;
+	//font-weight:800;
+}
+
+#Content {
+	width:950px;
+	margin:0px auto;
+	text-align:left;
+	//padding:15px;
+	height:900px;
+	background-color:#FFF;
+	padding-left:35px;
+	//padding-right:40px;
+	padding-top:30px;
+	padding-bottom:40px;
+	
+	//1. Horizontal offset
+	//2. Vertical offset
+	//3. Blur radius
+	//4. Spread raduis
+	//5. Color
+  	-moz-box-shadow:    1px 0px 5px 4px #ccc;
+  	-webkit-box-shadow: 1px 0px 5px 4px #ccc;
+  	box-shadow:         1px 0px 5px 4px #ccc;
+	
+	
+	
+	//color:#AFAFAF;
+	color:#333;
+	font-family:"Avenir LT W01 35 Light";
+	font-size:20px;
+	//font-family:"LinotypeUniversW01-Thin 723610";
+  
+
+	}
+
+}
+
+
+		
+		

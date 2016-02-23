@@ -1,0 +1,179 @@
+@charset "UTF-8";
+/* Global Styles */
+*{
+	margin:0px;
+	padding:0px;
+}
+figure{
+	margin:0px;
+	padding:0px;
+}
+
+a{
+	margin:0px;
+	padding:0px;
+	display:inline;
+	display:block;
+}
+
+h1{
+	font-size:20px;
+	font-weight:normal;
+}
+
+
+
+
+
+body {
+		//margin-top:0px;
+		//margin-bottom:0px; 
+		//text-align:center;
+		//background-color:#eee;
+	}
+	hr{
+		margin:0px;
+		color:#D0D0D0;
+		background-color:#DFDFDF;
+		height: 1px;
+		border:none;
+		
+		clear:both;
+	}
+	
+	#top_line{
+		color:#000;
+		background-color:#000;
+		height: 5px;
+		border:none;
+		margin-bottom:30px;
+		
+		clear:left;
+	}
+	
+	
+	
+
+
+
+#Content {
+		width:1024px;
+		margin:0px auto;
+		text-align:left;
+		//padding:15px;
+		height:2000px;
+		background-color:#FFF;
+		//padding-left:35px;
+		//padding-right:40px;
+		//padding-top:30px;
+		//padding-bottom:40px;
+		
+		//1. Horizontal offset
+		//2. Vertical offset
+		//3. Blur radius
+		//4. Spread raduis
+		//5. Color
+		-moz-box-shadow:    1px 0px 5px 4px #ccc;
+		-webkit-box-shadow: 1px 0px 5px 4px #ccc;
+		box-shadow:         1px 0px 5px 4px #ccc;
+		color:#333;
+		font-family:"Avenir LT W01 35 Light";
+		//outline:#F00 dotted thin;
+	}
+	
+
+	
+	/*Navigation */
+		nav{
+			text-align:left;
+			font-size: 16px;
+			
+			float:left;
+			margin-left:310px;
+			//outline:#F00 dotted thin;
+			margin-bottom:50px;
+		}
+		a{
+			text-decoration:none;
+			color:rgb(51,102,204);
+			//margin-left:10px;
+			
+			//padding-left:2px;
+			margin:0px;
+			padding:0px;
+		}
+
+		a:hover{
+			
+			color:#000;
+			border:0px 0px 0px 0px;
+		}
+
+		a.active{
+			
+			border-left:1px solid #000;
+			
+			color:#309;
+			padding-left:10px;
+			margin-left:-11px;
+			
+		}
+		
+		#menu1
+		{
+			float:left;
+			border-left:1px solid #CCC;
+			padding-left:10px;
+			color:#309;
+			
+		}
+		
+		#menu2{
+			float:left;
+			margin-left:40px;
+			border-left:1px solid #CCC;
+			padding-left:10px;
+			color:#309;
+		}
+		
+		#logo{
+			float:left;
+			padding:0px 0px 0px 35px;
+			
+		}
+		
+		hr{
+			//clear:left;
+			
+			
+		}
+		/* End Navigation*/
+		
+		
+	#title{
+		
+		font-size:60px;
+		color:#309;
+		margin-bottom:-5px;
+		margin-top:-10px;
+		padding:0px 0px 0px 0px;
+		font-family:"LinotypeUniversW01-Medi 723679";
+		//outline:#F00 dotted thin;
+		width:300px;
+		
+		letter-spacing:-2px;
+		//font-weight:800;
+	}
+	
+	#sub_title{
+		font-size:20px;
+		color:#CCC;
+		//outline:#F00 dotted thin;
+		padding:0px 0px 5px 0px;
+		font-family:"LinotypeUniversW01-Medi 723679";
+		width:300px;
+		letter-spacing:-1px;
+	}
+	
+	
+	
