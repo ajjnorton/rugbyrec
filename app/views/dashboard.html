@@ -7,6 +7,17 @@
 
 .list-group-item {
     font-weight: 400;
+    border: none;
+}
+
+.list-group {
+    margin-bottom: 0px !important;
+    border-radius: 0px !important;
+}
+
+.list-group-item:last-child {
+    border-bottom-right-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
 }
 
 .xp-text-title {
@@ -25,6 +36,13 @@
 .xp-text-message {
     font-size: 13px;
     line-height: 17px;
+}
+input{
+    font-size: 13px !important;
+}
+textarea{
+    font-size: 13px !important;
+
 }
 
 .text-count-down {
@@ -63,7 +81,7 @@ span {
 </style>
 <div class="row">
     <div class="col-md-12 header">
-        <h1 class="my-page-header"> Dashboard
+        <h1 class="my-page-header"> Dashboard <small>{{numberOfPics}} Pictures in database</small>
         <span style="width:300px;" class="input-group pull-right">
                 <span class="input-group-addon"><i class="fa fa-search fa-fw "></i></span>
                 <input style="width:300px;" type="text" ng-model="filterTest" class="form-control" id="filterTest" placeholder="Player search">
@@ -78,25 +96,39 @@ span {
         <div ng-repeat="picture in pictures | filter: {player : filterTest} | orderBy:'id':true">
             <div class="item">
                 <div class="panel panel-default">
-                    <ul class="list-group">
-                        <li class="list-group-item title-section">
-                            <div class="text-count-down"><i class="fa fa-clock-o"></i> Thr 21 Mar 2016<span class="badge pull-right">{{picture.id}}</span></a>
-                            </div>
-                            <div class="xp-text-title">{{picture.player}}</div>
-                        </li>
-                    </ul>
-                    <img class="img-responsive" ng-src="/assets/images/{{picture.imgPath}}">
-                    <ul class="list-group">
-                        <li class="list-group-item">
-                            <div class="xp-text-label">Caption</div>
-                            <div class="xp-text-message">{{picture.caption}}</div>
-                        </li>
-                        <li class="list-group-item" style="text-align: right;">
-                            <button type="button" class="btn btn-sm btn-danger"><i class="fa fa-trash fa-fw fa-lg"></i></button>
-                            <button type="button" class="btn btn-sm btn-default"><i class="fa fa-pencil fa-fw fa-lg"></i></button>
-                        </li>
-                    </ul>
-                    </ul>
+                    <form editable-form name="editableForm" onaftersave="saveUser()">
+                        <ul class="list-group">
+                            <li class="list-group-item title-section">
+                                <div class="text-count-down"><i class="fa fa-clock-o"></i> Thr 21 Mar 2016<span class="badge pull-right">{{picture.id}}</span>
+                                </div>
+                                <span class="xp-text-title" editable-text="picture.player" e-name="player">{{picture.player}}</span>
+                            </li>
+                        </ul>
+                        <img class="img-responsive" ng-src="/assets/images/{{picture.imgPath}}">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <div class="xp-text-label">Caption</div>
+                               
+                                <span class="xp-text-message" editable-textarea="picture.caption" e-name="caption" e-rows="3" e-cols="27">{{picture.caption}} </span>
+                            </li>
+                            <li class="list-group-item" style="text-align: right; border-top:1px solid #ccc;">
+                                <button type="button" class="btn btn-sm btn-danger" ng-show="!editableForm.$visible"><i class="fa fa-trash fa-fw fa-lg"></i></button>
+                                <!-- button to show form -->
+                                <button type="button" class="btn btn-default btn-sm" ng-click="editableForm.$show()" ng-show="!editableForm.$visible">
+                                    <i class="fa fa-pencil fa-fw fa-lg"></i>
+                                </button>
+                                <!-- buttons to submit / cancel form -->
+                                <span ng-show="editableForm.$visible">
+                                <button type="submit" class="btn btn-primary btn-sm" ng-disabled="editableForm.$waiting">
+                                    Save
+                                </button>
+                                <button type="button" class="btn btn-default btn-sm" ng-disabled="editableForm.$waiting" ng-click="editableForm.$cancel()">
+                                     Cancel
+                                </button>
+                             
+                            </li>
+                        </ul>
+                    </form>
                 </div>
             </div>
         </div>

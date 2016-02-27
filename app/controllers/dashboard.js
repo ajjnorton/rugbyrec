@@ -18,27 +18,21 @@ ctrl.controller('dashboardCtrl', function($scope, $firebaseArray) {
 
     var ref = new Firebase("https://rugbyrec-app.firebaseio.com");
     $scope.pictures = $firebaseArray(ref);
-    console.log($scope.pictures);
 
-    /*
+
+
 
     $scope.pictures.$loaded()
         .then(function() {
-            angular.forEach($scope.pictures, function(value, key) {
-                console.log(value.$id);
-                var item = $scope.pictures.$getRecord(value.$id);
-                item.id = Number(value.id);
-                $scope.pictures.$save(item).then(function() {
-                    // data has been saved to our database
-                });
-
-            });
+            $scope.numberOfPics = $scope.pictures.length;
         })
         .catch(function(err) {
             console.error(err);
         });
-        */
 
+    $scope.pictures.$watch(function(event) {
+        $scope.numberOfPics = $scope.pictures.length;
+    });
 
 
 

@@ -3,7 +3,8 @@
     var app = angular.module('rugbyrec', [
         'ui.router',
         'dashboard.contollers',
-        'firebase'
+        'firebase',
+        'xeditable'
         ])
 
     app.config(function($stateProvider, $urlRouterProvider) {
