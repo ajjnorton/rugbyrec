@@ -68,9 +68,7 @@ span {
 <div class="row">
     <div class="col-lg-12">
         <h1 class="page-header"> Reminders</h1>
-        <h3>Tags : Insurance, Car, House, Passport, Visa, Tax</h3>
-        <h3>Rag status : Red = deadline passed, yellow = deadline close?</h3>
-        <h4>Tapping on an image reveals the info panel</h4>
+        
         <div class="form-group">
             <label for="filterTest">Filter test</label>
             <input type="text" ng-model="filterTest" class="form-control" id="filterTest" placeholder="Filter">
@@ -81,26 +79,26 @@ span {
 <div class="row">
     <div class="col col-md-12">
         <div masonry>
-            <div ng-repeat="image in myimages | filter: {title : filterTest}">
+            <div ng-repeat="picture in pictures | filter: {player : filterTest}">
                 <div class="masonry-brick">
                     <div class="panel panel-default ">
                         <ul class="list-group">
                             <li class="list-group-item title-section">
                                 <div class="text-count-down"><i class="fa fa-clock-o"></i> Remind me in &nbsp - &nbsp 01 Y : 11 M : 25 D</div>
-                                <div class="xp-text-title">{{image.title}}</div>
+                                <div class="xp-text-title">{{picture.player}}</div>
                             </li>
                         </ul>
                         <div>
-                            <img ng-src="{{image.link}}" class="img-responsive">
+                            <img ng-src="/assets/images/{{picture.imgPath}}" class="img-responsive">
                         </div>
                         <ul class="list-group">
                             <li class="list-group-item">
                                 <div class="xp-text-label">Your Message</div>
-                                <div class="xp-text-message ">{{image.message}}<a href="tel:1-408-555-5555">1-408-555-5555</a></div>
+                                <div class="xp-text-message "><a href="tel:1-408-555-5555">1-408-555-5555</a></div>
                             </li>
                             <li class="list-group-item clearfix">
                                 <div class="xp-text-label">Actual Due Date</div>
-                                <div class="xp-text-message">Sun 15 October 2016</div>
+                                <div class="xp-text-message">{{picture.imgPath}}</div>
                             </li>
                             <li class="list-group-item clearfix">
                                 <div class="xp-text-label">Send Reminder</div>
