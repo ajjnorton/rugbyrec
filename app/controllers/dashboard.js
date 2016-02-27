@@ -27,6 +27,10 @@ ctrl.controller('dashboardCtrl', function($scope) {
     $scope.test="hello";
     console.log($scope.myimages);
 
+
+
+    var ref = new Firebase("https://rugbyrec-app.firebaseio.com");
+
 });
 
 
