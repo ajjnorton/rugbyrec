@@ -73,8 +73,8 @@
             </div>
             <div ng-repeat="picture in pictures " class="col-sm-6 col-md-3">
                 <div class="panel panel-default">
-                    <div class="picture-container">
-                        <img class="img-responsive" ng-src="/thumbs/{{picture.imgPath}}" alt="...">
+                    <div class="thumbnail">
+                        <img class="img-responsive" ng-src="/admin/imageTest/processed/{{picture.imgPath}}" alt="...">
                     </div>
                     <div class="panel-body">
                         <div class="text-danger text-playerName" ng-if="!picture.player">No Name</div>

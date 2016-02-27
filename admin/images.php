@@ -29,7 +29,7 @@ foreach($images as $file) {
       if($width>$height){
             //Landscape
             //Set the max with to crop to
-            $maxsize = 1024;
+            $maxsize = 640;
             // Keep the original size if its < $maxsize
             if($width<$maxsize){
                 $maxsize=$width;
@@ -37,8 +37,8 @@ foreach($images as $file) {
         }else{
             //portrait or square 
             //Set the max with to crop to
-            $maxsize=800;
-            if($height<800){
+            $maxsize=480;
+            if($height<480){
                 $maxsize=$height;
             } 
         }
