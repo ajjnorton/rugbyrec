@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html ng-app="xpatcloud">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>xpatCloud</title>
+    <!-- admin app css -->
+    <link type="text/css" rel="stylesheet" href="css/app.css" />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap-theme.css">
+    <!-- MetisMenu CSS -->
+    <link href="/node_modules/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
+    <!-- typographic stylrs -->
+    <link href="css/typography.css" rel="stylesheet">
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="/node_modules/font-awesome/css/font-awesome.min.css">
+    <!-- web font  -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:100,300,400' rel='stylesheet' type='text/css'>
+    <!-- HTML5  a Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+    #page-wrapper {
+        background-color: rgba(236, 241, 245, 1);
+    }
+    
+    .text-version {
+        font-weight: 200;
+        font-size: 12px;
+        margin-bottom: 0px;
+        letter-spacing: 1px;
+        color: #999;
+    }
+    .navbar-brand{
+        font-size: 28px !important;
+        font-weight: 400;
+    }
+    </style>
+</head>
+
+<body ng-cloak>
+    <div id="wrapper">
+        <!-- Load Navigation -->
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">xpatCloud.com</a>
+            </div>
+            <!-- /.navbar-top-links -->
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                        <li>
+                            <a href="" ui-sref="dashboard"><i class="fa fa-calendar-check-o fa-fw"></i> Reminders</a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-user fa-fw"></i> My Account<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="" ui-sref="accountSettings">Account settings</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side. -->
+        </nav>
+        <!-- ui-view -->
+        <div id="page-wrapper">
+            <div ui-view>
+            </div>
+            <!-- ./ui-view -->
+        </div>
+        <!-- /#page-wrapper -->
+    </div>
+    <!-- ***** -->
+    <!-- *** THIRD PARTY DEPENDENCIES *** -->
+    <!-- ***** -->
+    <!-- jQuery -->
+    <script src="/node_modules/jquery/dist/jquery.js"></script>
+    <!-- angular -->
+    <script src="/node_modules/angular/angular.js"></script>
+    <!-- angular-masonary -->
+    <script src="/node_modules/angular-masonry/angular-masonry.js"></script>
+    <!-- bootstrap -->
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- metisMenu -->
+    <script src="/node_modules/metisMenu/dist/metisMenu.min.js"></script>
+    <!-- angular-ui-router -->
+    <script src="/node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+    <!-- masonary -->
+    <script src="/node_modules/masonry-layout/dist/masonry.pkgd.js"></script>
+    <!-- imagesloaded -->
+    <script src="/node_modules/imagesloaded/imagesloaded.js"></script>
+    <!-- ***** -->
+    <!-- *** LOCAL DEPENDENCIES ***  -->
+    <!-- ***** -->
+    <!-- Custom admin Theme JavaScript -->
+    <script src="js/admin.js"></script>
+    <!-- controllers -->
+    <script src="controllers/xp_dashboard.js"></script>
+    <!-- app -->
+    <script src="app.js"></script>
+</body>
+
+</html>

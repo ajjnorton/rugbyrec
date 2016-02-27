@@ -1,0 +1,32 @@
+{
+  "name": "xpatcloud",
+  "version": "1.0.0",
+  "description": "Reminders for xpats",
+  "main": "gulpfile.js",
+  "bin": {
+    "xpatcloud": "test.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "anthony@modularity",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-connect": "^2.2.0",
+    "gulp-uglify": "^1.4.1",
+    "gulp-util": "^3.0.6"
+  },
+  "dependencies": {
+    "angular": "^1.4.7",
+    "angular-masonry": "^0.13.0",
+    "angular-ui-router": "^0.2.15",
+    "bootstrap": "^3.3.5",
+    "font-awesome": "^4.4.0",
+    "imagesloaded": "^3.1.8",
+    "jquery": "^2.1.4",
+    "masonry-layout": "^3.3.2",
+    "metismenu": "^2.2.0"
+  }
+}
