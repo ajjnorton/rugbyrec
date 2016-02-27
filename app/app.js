@@ -2,7 +2,6 @@
 
     var app = angular.module('rugbyrec', [
         'ui.router',
-        'wu.masonry',
         'dashboard.contollers',
         'firebase'
         ])
