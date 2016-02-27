@@ -1,4 +1,4 @@
-var ctrl = angular.module('xp.contollers', [])
+var ctrl = angular.module('dashboard.contollers', [])
 
 
 
@@ -10,7 +10,7 @@ var ctrl = angular.module('xp.contollers', [])
  *   TemplateURL : views/project_admin.html
  *   Controller for the project admin view inside the admin page
  */
-ctrl.controller('xp.desktop', function($scope) {
+ctrl.controller('dashboardCtrl', function($scope) {
     console.log("desktop Active");
     var myimages =[
       {"link":"assets/images/back13.png","title":"BMW X5 Insurance","message":"Insurance expires 598116 Ababian Insurance Policy No WS-D23S345. Ring Khalifa on 1-408-555-5555"},

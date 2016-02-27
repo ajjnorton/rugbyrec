@@ -3,7 +3,7 @@
     var app = angular.module('rugbyrec', [
         'ui.router',
         'wu.masonry',
-        'xp.contollers'
+        'dashboard.contollers'
         ])
 
     app.config(function($stateProvider, $urlRouterProvider) {
@@ -16,7 +16,7 @@
             .state('dashboard', {
                 url: '/dashboard',
                 templateUrl: 'views/dashboard.html',
-                controller: 'xp.desktop'
+                controller: 'dashboardCtrl'
             })
 
 
