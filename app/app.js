@@ -1,6 +1,10 @@
 (function() {
 
-    var app = angular.module('xpatcloud', ['ui.router','wu.masonry','xp.contollers'])
+    var app = angular.module('rugbyrec', [
+        'ui.router',
+        'wu.masonry',
+        'xp.contollers'
+        ])
 
     app.config(function($stateProvider, $urlRouterProvider) {
 
