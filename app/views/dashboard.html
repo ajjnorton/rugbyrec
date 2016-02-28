@@ -37,12 +37,13 @@
     font-size: 13px;
     line-height: 17px;
 }
-input{
+
+input {
     font-size: 13px !important;
 }
-textarea{
-    font-size: 13px !important;
 
+textarea {
+    font-size: 13px !important;
 }
 
 .text-count-down {
@@ -78,15 +79,26 @@ span {
     //background-color: #f0ad4e;
     //background-color:#d9534f;
 }
+hr.myStyle {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
 </style>
 <div class="row">
     <div class="col-md-12 header">
-        <h1 class="my-page-header"> Dashboard <small>{{numberOfPics}} Pictures in database</small>
-        <span style="width:300px;" class="input-group pull-right">
+        
+            <h1 class="my-page-header"> Dashboard <small>{{numberOfPics}} Pictures in database</small></h1>
+      
+   
+            <div style="margin-bottom: 20px;" class="input-group">
                 <span class="input-group-addon"><i class="fa fa-search fa-fw "></i></span>
                 <input style="width:300px;" type="text" ng-model="filterTest" class="form-control" id="filterTest" placeholder="Player search">
-        </span>
-                <!--<input style="width:300px;" type="text" ng-model="filterTest" class="form-control" id="filterTest" placeholder="Player search">-->
+            </div>
+            <hr class="myStyle">
+        
+        <!--<input style="width:300px;" type="text" ng-model="filterTest" class="form-control" id="filterTest" placeholder="Player search">-->
         </h1>
     </div>
     <!-- /.col-lg-12 -->
@@ -108,7 +120,6 @@ span {
                         <ul class="list-group">
                             <li class="list-group-item">
                                 <div class="xp-text-label">Caption</div>
-                               
                                 <span class="xp-text-message" editable-textarea="picture.caption" e-name="caption" e-rows="3" e-cols="27">{{picture.caption}} </span>
                             </li>
                             <li class="list-group-item" style="text-align: right; border-top:1px solid #ccc;">

@@ -36,9 +36,9 @@ body {
 
 .my-page-header{
     padding-top: 50px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #ccc;
-    margin-bottom:30px;
+    //padding-bottom: 10px;
+    //border-bottom: 1px solid #ccc;
+    //margin-bottom:30px;
 }
 
 .panel {

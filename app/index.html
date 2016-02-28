@@ -49,7 +49,7 @@
     </style>
 </head>
 
-<body ng-cloak>
+<body ng-cloak ng-controller="adminCtrl">
     <div id="wrapper">
         <!-- Load Navigation -->
         <!-- Navigation -->
@@ -68,17 +68,15 @@
                 <div class="sidebar-nav navbar-collapse">
                     <ul class="nav nav-text" id="side-menu">
                         <li>
-                            <a href="" ui-sref="dashboard"><i class="fa fa-tachometer fa-fw"></i> Dashboard</a>
+                            <a href="#/dashboard"><i class="fa fa-tachometer fa-fw"></i> Dashboard</a>
                             <ul class="nav nav-second-level">
                                 <li>
                                 </li>
                             </ul>
                         </li>
                          <li>
-                            <a href="" ui-sref=""><i class="fa fa-tachometer fa-fw"></i> Add new picture</a>
+                            <a href="" ng-click="addpic()"><i class="fa fa-camera fa-fw toggle"></i> Add Picture</a>
                             <ul class="nav nav-second-level">
-                                <li>
-                                </li>
                             </ul>
                         </li>
                         
@@ -129,6 +127,7 @@
     <!-- Custom admin Theme JavaScript -->
     <script src="js/admin.js"></script>
     <!-- controllers -->
+    <script src="controllers/adminController.js"></script>
     <script src="controllers/dashboard.js"></script>
     <script src="/bower_components/angular-xeditable/dist/js/xeditable.min.js"></script>
    

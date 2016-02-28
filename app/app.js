@@ -3,6 +3,7 @@
     var app = angular.module('rugbyrec', [
         'ui.router',
         'dashboard.contollers',
+        'admin.controllers',
         'firebase',
         'xeditable'
         ])
@@ -10,7 +11,7 @@
     app.config(function($stateProvider, $urlRouterProvider) {
 
         // any unm  atched url, redirect to
-        $urlRouterProvider.otherwise('/dashboard');
+        $urlRouterProvider.otherwise('/addpic');
 
 
         $stateProvider
@@ -18,6 +19,11 @@
                 url: '/dashboard',
                 templateUrl: 'views/dashboard.html',
                 controller: 'dashboardCtrl'
+            })
+            .state('addpic', {
+                url: '/addpic',
+                templateUrl: 'views/addpic.html'
+                
             })
 
 
