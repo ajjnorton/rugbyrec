@@ -5,7 +5,8 @@
         'dashboard.contollers',
         'admin.controllers',
         'firebase',
-        'xeditable'
+        'xeditable',
+        'infinite-scroll'
         ])
 
     app.config(function($stateProvider, $urlRouterProvider) {

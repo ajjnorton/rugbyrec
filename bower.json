@@ -1,0 +1,24 @@
+{
+  "name": "rugbyRec",
+  "description": "Rugby Rec admin",
+  "main": "gulpfile.js",
+  "authors": [
+    "anthony@modularity"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/ajjnorton/rugbyrec",
+  "moduleType": [
+    "amd"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "ngInfiniteScroll": "1.0.0",
+    "angular-xeditable": "^0.1.10"
+  }
+}

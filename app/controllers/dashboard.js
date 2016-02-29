@@ -13,7 +13,7 @@ var ctrl = angular.module('dashboard.contollers', [])
 ctrl.controller('dashboardCtrl', function($scope, $firebaseArray) {
     console.log("desktop Active");
 
-
+    $scope.spinner=true;
 
 
     var ref = new Firebase("https://rugbyrec-app.firebaseio.com");
@@ -25,6 +25,7 @@ ctrl.controller('dashboardCtrl', function($scope, $firebaseArray) {
     $scope.pictures.$loaded()
         .then(function() {
             $scope.numberOfPics = $scope.pictures.length;
+            $scope.spinner=false;
         })
         .catch(function(err) {
             console.error(err);
