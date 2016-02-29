@@ -7,7 +7,21 @@
         'firebase',
         'xeditable',
         'bootstrapLightbox'
-        ])
+    ])
+
+    app.config(function(LightboxProvider) {
+
+        LightboxProvider.getImageUrl = function(image) {
+            console.log(image);
+            return '/assets/images/' + image.filename;
+        };
+
+        LightboxProvider.getImageCaption = function(image) {
+            //return image.title;
+        };
+    });
+
+
 
     app.config(function($stateProvider, $urlRouterProvider) {
 
@@ -24,7 +38,7 @@
             .state('addpic', {
                 url: '/addpic',
                 templateUrl: 'views/addpic.html'
-                
+
             })
 
 
