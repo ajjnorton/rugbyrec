@@ -44,4 +44,13 @@ ctrl.controller('dashboardCtrl', function($scope, $firebaseArray, Lightbox) {
     };
 
 
+
+
+
+    $scope.savePicture = function(picture) {
+        // $scope.user already updated!
+        console.log(picture);
+        console.log($scope.pictures);
+    };
+
 });

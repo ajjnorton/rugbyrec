@@ -110,12 +110,12 @@ hr.myStyle {
             <div ng-repeat="picture in pictures | filter: {player : filterTest}">
                 <div class="item">
                     <div class="panel panel-default">
-                        <form editable-form name="editableForm" onaftersave="saveUser()">
+                        <form editable-form name="editableForm" onaftersave="savePicture(picture)">
                             <ul class="list-group">
                                 <li class="list-group-item title-section">
                                     <div class="text-count-down"><i class="fa fa-clock-o"></i> Thr 21 Mar 2016<span class="badge pull-right">{{picture.id}}</span>
                                     </div>
-                                    <span class="xp-text-title" editable-text="picture.player" e-name="player">{{picture.player}}</span>
+                                    <span class="xp-text-title" editable-text="picture.player"  e-name="player">{{picture.player}}</span>
                                 </li>
                             </ul>
                             <a ng-click="openLightboxModal($index)">
@@ -134,7 +134,7 @@ hr.myStyle {
                                     </button>
                                     <!-- buttons to submit / cancel form -->
                                     <span ng-show="editableForm.$visible">
-                                    <button type="submit" class="btn btn-primary btn-sm" ng-disabled="editableForm.$waiting">
+                                    <button type="submit" class="btn btn-primary btn-sm" ng-click="editPicture(picture)" ng-disabled="editableForm.$waiting">
                                         Save
                                     </button>
                                     <button type="button" class="btn btn-default btn-sm" ng-disabled="editableForm.$waiting" ng-click="editableForm.$cancel()">
