@@ -24,6 +24,7 @@ ctrl.controller('dashboardCtrl', function($scope, $firebaseArray, Lightbox) {
 
     $scope.pictures.$loaded()
         .then(function() {
+            $scope.pictures.reverse();
             $scope.numberOfPics = $scope.pictures.length;
             $scope.spinner = false;
         })
@@ -38,6 +39,8 @@ ctrl.controller('dashboardCtrl', function($scope, $firebaseArray, Lightbox) {
 
     $scope.openLightboxModal = function(index) {
         Lightbox.openModal($scope.pictures, index);
+        //console.log(index);
+        //console.log($scope.pictures);
     };
 
 

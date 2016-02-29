@@ -103,7 +103,7 @@ hr.myStyle {
 <div class="row rows">
     <div class="col-lg-12">
         <div infinite-scroll="addMoreItems()">
-            <div ng-repeat="picture in pictures | filter: {player : filterTest} | orderBy:'id':true">
+            <div ng-repeat="picture in pictures | filter: {player : filterTest}">
                 <div class="item">
                     <div class="panel panel-default">
                         <form editable-form name="editableForm" onaftersave="saveUser()">

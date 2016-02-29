@@ -13,12 +13,13 @@
 
         LightboxProvider.getImageUrl = function(image) {
             console.log(image);
-            return '/assets/images/' + image.filename;
+            return '/assets/images/' + image.imgPath;
         };
 
         LightboxProvider.getImageCaption = function(image) {
-            //return image.title;
+            //return image.caption;
         };
+       
     });
 
 
