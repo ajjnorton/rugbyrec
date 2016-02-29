@@ -66,6 +66,9 @@ textarea {
     position: relative;
     display: block;
 }
+.rugPic:hover{
+    cursor: pointer;
+}
 
 span {
     display: inline-block;
@@ -89,7 +92,8 @@ hr.myStyle {
 </style>
 <div class="row">
     <div class="col-md-12 header">
-        <h1 class="my-page-header"><i ng-show="spinner" class="fa fa-spinner fa-pulse"></i> Dashboard <small>{{numberOfPics}} Pictures in database</small></h1>
+        <h1 class="my-page-header">Dashboard <small>{{numberOfPics}} Pictures in database</small></h1>
+        <p class="text-primary" ng-show="spinner"><i class="fa fa-refresh fa-fw "></i> Loading pictures, please wait ...</p>
         <div style="margin-bottom: 20px;" class="input-group">
             <span class="input-group-addon"><i class="fa fa-search fa-fw "></i></span>
             <input style="width:300px;" type="text" ng-model="filterTest" class="form-control" id="filterTest" placeholder="Player search">
@@ -115,7 +119,7 @@ hr.myStyle {
                                 </li>
                             </ul>
                             <a ng-click="openLightboxModal($index)">
-                                <img class="img-responsive" ng-src="/assets/images/{{picture.imgPath}}">
+                                <img class="img-responsive rugPic" ng-src="/assets/images/{{picture.imgPath}}">
                             </a>
                             <ul class="list-group">
                                 <li class="list-group-item">

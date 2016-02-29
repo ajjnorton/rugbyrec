@@ -17,9 +17,9 @@
         };
 
         LightboxProvider.getImageCaption = function(image) {
-            //return image.caption;
+            return image.caption;
         };
-       
+
     });
 
 
