@@ -6,7 +6,7 @@
         'admin.controllers',
         'firebase',
         'xeditable',
-        'infinite-scroll'
+        'bootstrapLightbox'
         ])
 
     app.config(function($stateProvider, $urlRouterProvider) {

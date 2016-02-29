@@ -114,7 +114,9 @@ hr.myStyle {
                                     <span class="xp-text-title" editable-text="picture.player" e-name="player">{{picture.player}}</span>
                                 </li>
                             </ul>
-                            <img class="img-responsive" ng-src="/assets/images/{{picture.imgPath}}">
+                            <a ng-click="openLightboxModal($index)">
+                                <img class="img-responsive" ng-src="/assets/images/{{picture.imgPath}}">
+                            </a>
                             <ul class="list-group">
                                 <li class="list-group-item">
                                     <div class="xp-text-label">Caption</div>

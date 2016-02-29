@@ -10,10 +10,10 @@ var ctrl = angular.module('dashboard.contollers', [])
  *   TemplateURL : views/project_admin.html
  *   Controller for the project admin view inside the admin page
  */
-ctrl.controller('dashboardCtrl', function($scope, $firebaseArray) {
+ctrl.controller('dashboardCtrl', function($scope, $firebaseArray, Lightbox) {
     console.log("desktop Active");
 
-    $scope.spinner=true;
+    $scope.spinner = true;
 
 
     var ref = new Firebase("https://rugbyrec-app.firebaseio.com");
@@ -25,7 +25,7 @@ ctrl.controller('dashboardCtrl', function($scope, $firebaseArray) {
     $scope.pictures.$loaded()
         .then(function() {
             $scope.numberOfPics = $scope.pictures.length;
-            $scope.spinner=false;
+            $scope.spinner = false;
         })
         .catch(function(err) {
             console.error(err);
@@ -36,6 +36,9 @@ ctrl.controller('dashboardCtrl', function($scope, $firebaseArray) {
     });
 
 
+    $scope.openLightboxModal = function(index) {
+        Lightbox.openModal($scope.pictures, index);
+    };
 
 
 });

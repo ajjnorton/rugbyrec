@@ -19,6 +19,14 @@
   ],
   "dependencies": {
     "ngInfiniteScroll": "1.0.0",
-    "angular-xeditable": "^0.1.10"
+    "angular-xeditable": "^0.1.10",
+    "angular-bootstrap-lightbox": "^0.10.0",
+     "angular": "^1.4.7",
+    "angular-bootstrap": "^0.14.3"
+  },
+  "devDependencies": {
+    "angular-loading-bar": "^0.8.0",
+    "angular-touch": "^1.4.7",
+    "ng-videosharing-embed": "^0.3.4"
   }
 }
