@@ -1,0 +1,64 @@
+<style type="text/css">
+
+
+
+
+input {
+    font-size: 13px !important;
+}
+
+textarea {
+    font-size: 13px !important;
+}
+
+
+
+</style>
+<div class="row">
+    <div class="col-md-12 header">
+        <h1 class="my-page-header">Catalogue <small>{{numberOfPics}} Pictures</small></h1>
+        <p class="text-primary" ng-show="spinner"><i class="fa fa-refresh fa-spin"></i> Loading pictures, please wait ...</p>
+        <div style="margin-bottom: 20px;" class="input-group">
+            <span class="input-group-addon"><i class="fa fa-search fa-fw "></i></span>
+            <input style="width:300px;" type="text" ng-model="filterTest" class="form-control" id="filterTest" placeholder="Player search">
+        </div>
+        <button type="button" class="btn btn-primary-outline" ui-sref="add_image">Add images</button>
+        <hr class="myStyle">
+        <!--<input style="width:300px;" type="text" ng-model="filterTest" class="form-control" id="filterTest" placeholder="Player search">-->
+        </h1>
+    </div>
+    <!-- /.col-lg-12 -->
+</div>
+<div class="row">
+    <div infinite-scroll="addMoreItems()">
+        <div class="card-columns">
+            <div ng-repeat="picture in pictures | filter: {player : filterTest}">
+                <form editable-form name="editableForm">
+                    <div class="card">
+                        <div class="card-block">
+                            <h4 class="card-title" editable-text="picture.player" onaftersave="updatePicture(picture)" e-name="player">{{picture.player}}</h4>
+                            <h6 class="card-subtitle text-muted">id: {{picture.id}}</h6>
+                            <small>{{picture.dateAdded}}</small>
+                        </div>
+                        <img class="img-fluid" ng-src="/assets/images/{{picture.imgPath}}" alt="Card image">
+                        <div class="card-block">
+                           
+                            <p><span editable-textarea="picture.caption" e-name="caption" e-rows="3" e-cols="27">{{picture.caption}} </span></p>
+                            
+                            <button type="button" class="btn btn-sm btn-danger" ng-show="!editableForm.$visible">Delete</button>
+                            <button type="button" class="btn btn-sm btn-primary" ng-click="editableForm.$show()" ng-show="!editableForm.$visible">Edit</button>
+                            <!-- buttons to submit / cancel form -->
+                            <span ng-show="editableForm.$visible">
+                            <button type="submit" class="btn btn-primary btn-sm" ng-disabled="editableForm.$waiting">Save</button>
+                            <button type="button" class="btn btn-success btn-sm" ng-disabled="editableForm.$waiting" ng-click="editableForm.$cancel()">Cancel</button>
+
+                        </div>
+                        
+                           
+                       
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
