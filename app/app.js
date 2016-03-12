@@ -6,6 +6,9 @@
         'add_image.controllers',
         'firebase',
         'xeditable',
+        'angularFileUpload',
+        'ui.bootstrap',
+        'angular.filter'
 
     ])
 
