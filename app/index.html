@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="apple-touch-fullscreen" content="yes" />
     <title>RugbyRec</title>
     <!-- Tether -->
     <link href="/node_modules/tether/dist/css/tether.css" rel="stylesheet">
@@ -16,11 +19,12 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
-     <link href="/bower_components/angular-xeditable/dist/css/xeditable.min.css" rel="stylesheet">
+    <link href="/bower_components/angular-xeditable/dist/css/xeditable.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="css/simple-sidebar.css" rel="stylesheet">
     <link href="css/catalogue.css" rel="stylesheet">
+    <link rel="stylesheet" href="/app/css/plugins.css">
+    <link rel="stylesheet" href="/app/css/styles.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -30,7 +34,6 @@
 </head>
 
 <body>
-
     <nav class="navbar navbar-fixed-top navbar-light bg-faded navbar-full">
         <a class="navbar-brand" href="#">RugbyRec</a>
         <ul class="nav navbar-nav pull-right">
@@ -90,7 +93,7 @@
     <script src="/app/app.js"></script>
     <!-- App -->
     <script src="/app/modules/catalogue/catalogueCtrl.js"></script>
-    <script src="/app/modules/add_image/add_imageCtrl.js"></script>
+    <script src="/app/modules/add_image/uploadCtrl.js"></script>
     <!-- XEditable -->
     <script src="/bower_components/angular-xeditable/dist/js/xeditable.min.js"></script>
     <!-- Infinite scroll -->
@@ -101,11 +104,11 @@
     <!-- filter -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-filter/0.5.8/angular-filter.min.js"></script>
     <!-- angular-file-upload -->
-    <script src="lib/angular-file-upload/angular-file-upload-shim.js"></script>
-    <script src="lib/angular-file-upload/angular-file-upload-html5-shim.js"></script>
-    <script src="lib/angular-file-upload/angular-file-upload.min.js"></script>
-    <!--<script src="lib/angular-file-upload/angular-file-upload.min.js"></script>-->
-    <script src="lib/angular-file-upload-2/dist/angular-file-upload.min.js"></script>
+    <script src="/lib/angular-file-upload/angular-file-upload-shim.js"></script>
+    <script src="/lib/angular-file-upload/angular-file-upload-html5-shim.js"></script>
+    <script src="/lib/angular-file-upload-2/dist/angular-file-upload.min.js"></script>
+    <script src="/lib/angular-file-upload/angular-file-upload.min.js"></script>
+    <script src="/lib/angular-file-upload-2/dist/angular-file-upload.min.js"></script>
     <script>
     $("#menu-toggle").click(function(e) {
         e.preventDefault();
