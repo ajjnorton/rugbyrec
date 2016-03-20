@@ -72,6 +72,7 @@ p{
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
+    margin-top: 11px;
 }
 
 #wrapper.toggled #sidebar-wrapper {
