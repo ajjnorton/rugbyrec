@@ -10,24 +10,27 @@ var ctrl = angular.module('catalogue.contollers', [])
  *   TemplateURL : views/project_admin.html
  *   Controller for the project admin view inside the admin page
  */
-ctrl.controller('catalogueCtrl', function($scope, $firebaseArray) {
+ctrl.controller('catalogueCtrl', function($scope, $firebaseArray, toaster) {
     console.log("catalogue Active");
 
-    $scope.spinner = true;
+    $scope.pop = function() {
+        toaster.pop('success', "Thank you", '<h6 style="color:#fff;">Rendering images</h6>', 15000, 'trustedHtml');
+    };
 
 
     var ref = new Firebase("https://rugbyrec-app.firebaseio.com");
     pictures = $firebaseArray(ref);
     $scope.pictures = pictures;
 
-
+    toaster.pop('note', "Please wait", '<h6 style="color:#fff;">Loading data</h6>', -1, 'trustedHtml');
 
 
     $scope.pictures.$loaded()
         .then(function() {
             $scope.pictures.reverse();
             $scope.numberOfPics = $scope.pictures.length;
-            $scope.spinner = false;
+            toaster.clear();
+            $scope.pop();
 
         })
         .catch(function(err) {
@@ -53,7 +56,7 @@ ctrl.controller('catalogueCtrl', function($scope, $firebaseArray) {
         item.caption = picture.caption;
 
         pictures.$save(item).then(function() {
-        //data has been saved to our database
+            //data has been saved to our database
         });
     };
 
@@ -62,6 +65,6 @@ ctrl.controller('catalogueCtrl', function($scope, $firebaseArray) {
         console.log("addd pics");
     };
 
- 
+
 
 });
