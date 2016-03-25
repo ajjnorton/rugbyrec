@@ -25,6 +25,7 @@
     <link href="css/catalogue.css" rel="stylesheet">
     <link rel="stylesheet" href="/app/css/plugins.css">
     <link rel="stylesheet" href="/app/css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/angularjs-toaster/1.1.0/toaster.min.css" rel="stylesheet" />
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -34,6 +35,20 @@
 </head>
 
 <body>
+  <toaster-container toaster-options="{
+  'closeButton': false,
+  'debug': false,
+  'position-class': 'toast-top-right',
+  'onclick': null,
+  'showDuration': '200',
+  'hideDuration': '100',
+  'timeOut': '5000',
+  'extendedTimeOut': '1000',
+  'showEasing': 'swing',
+  'hideEasing': 'linear',
+  'showMethod': 'fadeIn',
+  'hideMethod': 'fadeOut'
+}"></toaster-container>
     <nav class="navbar navbar-fixed-top navbar-light bg-faded navbar-full">
         <a class="navbar-brand" href="#">RugbyRec</a>
         <ul class="nav navbar-nav pull-right">
@@ -109,6 +124,9 @@
     <script src="/lib/angular-file-upload-2/dist/angular-file-upload.min.js"></script>
     <script src="/lib/angular-file-upload/angular-file-upload.min.js"></script>
     <script src="/lib/angular-file-upload-2/dist/angular-file-upload.min.js"></script>
+
+    <script src="https://code.angularjs.org/1.4.0/angular-animate.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angularjs-toaster/1.1.0/toaster.min.js"></script>
     <script>
     $("#menu-toggle").click(function(e) {
         e.preventDefault();

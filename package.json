@@ -6,6 +6,7 @@
   "dependencies": {
     "angular": "^1.4.7",
     "angular-ui-router": "^0.2.15",
+    "angularjs-toaster": "^1.2.1",
     "bootstrap": "^4.0.0-alpha.2",
     "font-awesome": "^4.4.0",
     "jquery": "^2.2.1",

@@ -34,6 +34,7 @@
 <div class="container-fluid container-fullw bg-white">
     <div class="row">
         <div class="col-md-12">
+     
             <!--<h5 class="over-title margin-bottom-15">Uploads <span class="text-bold">only images</span></h5>
                 <p>
                     with canvas preview
@@ -43,6 +44,7 @@
                 <div class="row">
                     <div class="col-md-3">
                         <h4 class="section-heading">Selection Area</h4>
+                        <button ng-click="pop()">Show a Toaster</button>
                         <p class="text-stages">1. Enter or select match name</p>
                         <div class="form-group">
                             <input type="text" name="match" ng-model="selected2" placeholder="Enter match" uib-typeahead="picture.caption for picture in rugbyPhotos | unique:'caption' |  orderBy: 'caption' | filter:$viewValue | limitTo:20" class="form-control ">
@@ -128,6 +130,7 @@
                     </div>
                 </div>
             </div>
+            
         </div>
     </div>
 </div>

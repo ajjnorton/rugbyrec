@@ -8,7 +8,10 @@
         'xeditable',
         'angularFileUpload',
         'ui.bootstrap',
-        'angular.filter'
+        'angular.filter',
+        'toaster',
+        'ngAnimate'
+
 
     ])
 
