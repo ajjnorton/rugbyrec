@@ -22,7 +22,7 @@ ctrl.controller('catalogueCtrl', function($scope, $firebaseArray, toaster) {
     pictures = $firebaseArray(ref);
     $scope.pictures = pictures;
 
-    toaster.pop('note', "Please wait", '<h6 style="color:#fff;">Loading data</h6>', -1, 'trustedHtml');
+    toaster.pop('note', "Please wait", '<h6 style="color:#fff;">Loading images</h6>', -1, 'trustedHtml');
 
 
     $scope.pictures.$loaded()
