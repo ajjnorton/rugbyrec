@@ -3,8 +3,26 @@ var ctrl = angular.module('add_image.controllers', [])
 /** 
   * controllers for Angular File Upload
 */
-ctrl.controller('UploadCtrl', ['$scope', 'FileUploader',
-function ($scope, FileUploader) {
+ctrl.controller('UploadCtrl', ['$scope', 'FileUploader', '$firebaseArray',
+function ($scope, FileUploader, $firebaseArray) {
+
+
+
+        var ref = new Firebase('https://rugbyrec-app.firebaseio.com');
+    var list = $firebaseArray(ref);
+
+
+    list.$loaded()
+        .then(function(data) {
+            $scope.rugbyPhotos = data;
+            console.log($scope.rugbyPhotos);
+            $scope.loaded = true;
+        })
+        .catch(function(error) {
+            console.log("Error:", error);
+        });
+
+
     var uploaderImages = $scope.uploaderImages = new FileUploader({
         url: 'upload.php'
     });

@@ -9,10 +9,12 @@
     border-bottom: 3px solid #ccc;
     margin-bottom: 50px;
 }
-#page-title{
-    padding-top:50px !important;
+
+#page-title {
+    padding-top: 50px !important;
 }
-#page-content-wrapper{
+
+#page-content-wrapper {
     padding-left: 0px;
     padding-top: 0px;
 }
@@ -42,6 +44,9 @@
                     <div class="col-md-3">
                         <h4 class="section-heading">Selection Area</h4>
                         <p class="text-stages">1. Enter or select match name</p>
+                        <div class="form-group">
+                            <input type="text" name="match" ng-model="selected2" placeholder="Enter match" uib-typeahead="picture.caption for picture in rugbyPhotos | unique:'caption' |  orderBy: 'caption' | filter:$viewValue | limitTo:20" class="form-control ">
+                        </div>
                         <p class="text-stages">2. Enter or select player name</p>
                         <p class="text-stages">3. Elect player images for match</p>
                         <div class="panel panel-white">
