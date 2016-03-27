@@ -12,6 +12,7 @@ var ctrl = angular.module('catalogue.contollers', [])
  */
 ctrl.controller('catalogueCtrl', function($scope, $firebaseArray, toaster) {
     console.log("catalogue Active");
+    toaster.clear();
 
     $scope.pop = function() {
         toaster.pop('success', "Thank you", '<h6 style="color:#fff;">Rendering images</h6>', 15000, 'trustedHtml');

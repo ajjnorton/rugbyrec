@@ -5,7 +5,7 @@ var ctrl = angular.module('add_image.controllers', [])
  */
 ctrl.controller('UploadCtrl', ['$scope', 'FileUploader', '$firebaseArray', 'toaster',
     function($scope, FileUploader, $firebaseArray, toaster) {
-
+        toaster.clear();
 
         $scope.pop = function() {
             toaster.pop('success', "Thank you", '<h6 style="color:#fff;">Data loaded</h6>', 2000, 'trustedHtml');

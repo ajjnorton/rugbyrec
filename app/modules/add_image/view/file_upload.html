@@ -24,7 +24,7 @@
     <div class="row">
         <div class="col-sm-8">
             <h1 class="mainTitle">Create a match</h1>
-            <span class="mainDescription">Create a match and bulk add players to staging area for image uploading</span>
+            <span class="mainDescription">Create a match and then keep bulk adding player images until you are ready to upload</span>
         </div>
         <div ncy-breadcrumb></div>
     </div>
@@ -34,7 +34,6 @@
 <div class="container-fluid container-fullw bg-white">
     <div class="row">
         <div class="col-md-12">
-     
             <!--<h5 class="over-title margin-bottom-15">Uploads <span class="text-bold">only images</span></h5>
                 <p>
                     with canvas preview
@@ -44,17 +43,20 @@
                 <div class="row">
                     <div class="col-md-3">
                         <h4 class="section-heading">Selection Area</h4>
-                        <button ng-click="pop()">Show a Toaster</button>
+                        
                         <p class="text-stages">1. Enter or select match name</p>
                         <div class="form-group">
-                            <input type="text" name="match" ng-model="selected2" placeholder="Enter match" uib-typeahead="picture.caption for picture in rugbyPhotos | unique:'caption' |  orderBy: 'caption' | filter:$viewValue | limitTo:20" class="form-control ">
+                            <input type="text" name="match" ng-model="selected2" placeholder="Enter match" uib-typeahead="picture.caption for picture in rugbyPhotos | unique:'caption' |  orderBy: 'caption' | filter:$viewValue | limitTo:30" class="form-control ">
                         </div>
                         <p class="text-stages">2. Enter or select player name</p>
+                        <div class="form-group">
+                            <input type="text" name="player" ng-model="selected1" placeholder="Enter players name" uib-typeahead="picture.player for picture in rugbyPhotos | unique:'player' |  orderBy: 'player' | filter:$viewValue | limitTo:8" class="form-control ">
+                        </div>
                         <p class="text-stages">3. Elect player images for match</p>
                         <div class="panel panel-white">
                             <div class="panel-body">
                                 <!-- Example: nv-file-select="" uploader="{Object}" options="{Object}" filters="{String}" -->
-                                <span class="btn btn-primary btn-o btn-file"> Select images for
+                                <span class="btn btn-primary btn-o btn-file"> Select images for {{selected1}}
                                             <input type="file" nv-file-select="" uploader="uploaderImages" multiple  />
                                         </span>
                                 <br/>
@@ -96,12 +98,12 @@
                                         </td>
                                         <td class="text-center"><span ng-show="item.isSuccess"><i class="glyphicon glyphicon-ok"></i></span><span ng-show="item.isCancel"><i class="glyphicon glyphicon-ban-circle"></i></span><span ng-show="item.isError"><i class="glyphicon glyphicon-remove"></i></span></td>
                                         <td nowrap>
-                                            <button type="button" class="btn btn-primary btn-xs" ng-click="item.upload()" ng-disabled="item.isReady || item.isUploading || item.isSuccess">
+                                            <!--<button type="button" class="btn btn-primary btn-xs" ng-click="item.upload()" ng-disabled="item.isReady || item.isUploading || item.isSuccess">
                                                 <span class="glyphicon glyphicon-upload"></span> Upload
                                             </button>
                                             <button type="button" class="btn btn-warning btn-xs" ng-click="item.cancel()" ng-disabled="!item.isUploading">
                                                 <span class="glyphicon glyphicon-ban-circle"></span> Cancel
-                                            </button>
+                                            </button>-->
                                             <button type="button" class="btn btn-danger btn-xs" ng-click="item.remove()">
                                                 <span class="glyphicon glyphicon-trash"></span> Remove
                                             </button>
@@ -130,7 +132,6 @@
                     </div>
                 </div>
             </div>
-            
         </div>
     </div>
 </div>
